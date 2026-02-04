@@ -1,0 +1,67 @@
+/* ROOT VARIABLES */
+:root {
+    --navy: #0a192f;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --slate: #ccd6f6;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--navy);
+}
+
+/* NAVBAR */
+.navbar { background: var(--navy); padding: 1.2rem 0; border-bottom: 3px solid var(--gold); }
+.brand-text { color: var(--gold); font-size: 1.6rem; font-weight: 800; }
+.logo-img { height: 45px; }
+.nav-link { color: var(--slate) !important; font-weight: 600; margin-left: 20px; transition: 0.3s; }
+.nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+
+/* HERO */
+.hero-section {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+.hero-overlay { height: 100%; width: 100%; background: rgba(10, 25, 47, 0.85); }
+.title-bright { color: var(--gold); text-shadow: 2px 2px 15px rgba(0,0,0,0.4); }
+
+/* CATEGORY PAGE */
+.img-container-fix {
+    width: 100%;
+    aspect-ratio: 16/9; /* Perfectly equal sized images */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+.img-container-fix img { width: 100%; height: 100%; object-fit: cover; }
+
+.btn-navy { background: var(--navy); color: var(--gold); font-weight: 700; transition: 0.4s; }
+.btn-navy:hover { background: var(--gold); color: var(--navy); }
+.btn-gold { background: var(--gold); color: var(--navy); font-weight: 700; }
+
+/* MODAL */
+.custom-modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85); z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+}
+.modal-content-box { width: 450px; background: white; border-radius: 20px; border: 4px solid var(--gold); }
+.pay-logo { height: 40px; border: 1px solid #ddd; padding: 5px; border-radius: 5px; }
+
+/* ABOUT US */
+.dev-card {
+    background: white; padding: 40px; border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--navy);
+}
+.dev-avatar { font-size: 4rem; margin-bottom: 15px; }
+.italic-text { font-family: 'Montserrat'; font-style: italic; color: #777; }
+
+/* FOOTER */
+.footer-master {
+    background: var(--navy); color: var(--slate);
+    padding: 60px 0; border-top: 5px solid var(--gold);
+    margin-top: 100px;
+}
+.text-gold { color: var(--gold); font-weight: bold; }
